@@ -40,4 +40,4 @@ In this activity, you'll be creating an Amazon-like storefront with the MySQL sk
 
    ### Screenshots
 
-   
+   ![](./Images/Screen%20Shot%202019-10-30%20at%2011.26.22%20PM.png)
