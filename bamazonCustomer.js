@@ -29,7 +29,6 @@ function readProducts() {
         // Log all results of the SELECT statement
         console.table(res);
         Questions();
-        connection.end();
     });
 }
 
