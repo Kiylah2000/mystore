@@ -66,8 +66,7 @@ function Questions() {
             if (data[0].stock_quantity >= purchases.purchaseUnits) {
                 //updates the quantities in the database
                 var purchaseTotal = purchases.purchaseUnits * data[0].price;
-                var query = ("UPDATE products SET stock_quantity = " + (data[0].stock_quantity - purchases.purchaseUnits) + "WHERE item_id= "+ purchases.purchaseID);
-                connection.query(query, function(err, data) {
+                var query = ("UPDATE products SET stock_quantity = " + (data[0].stock_quantity - purchases.purchaseUnits) + " WHERE item_id= "+ purchases.purchaseID);                connection.query(query, function(err, data) {
                     if (err) throw err;
                     console.log("Your total is: " + purchaseTotal);
                     console.log("Congratulations, the product you requested is in stock! Placing Your order!");
